@@ -1,0 +1,14 @@
+#Java
+
+public String sort(String s){
+  char content[] = s.toCharArray();
+  java.utils.Arrays.sort(content);
+  return new String(content);
+}
+
+public boolean permutation(String s,String t){
+  if(s.length() != t.length()){
+    return false;
+  }
+  return sort(s).equals(sort(t));  
+}
